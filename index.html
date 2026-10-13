@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3dce6"><meta name="description" content="A friendly English grammar learning app for A1–A2 learners.">
+  <title>Grammie — Small steps, stronger English</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#home" aria-label="Grammie home"><span class="brand-mark">🐻</span><span>grammie<span class="brand-dot">.</span><small>little steps, big progress</small></span></a>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a href="#home" data-page="home"><span>⌂</span> Home</a><a href="#learn" data-page="learn"><span>▤</span> Grammar Library</a><a href="#progress" data-page="progress"><span>◷</span> My progress</a><a href="#tutor" data-page="tutor"><span>✳</span> Grammie Tutor</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="bear-note"><div class="bear-face">🐻</div><p><b>Hi, learner!</b><br>Your next little step is waiting.</p></div><small>Made for curious minds ♡</small></div>
+  </aside>
+  <main class="main-area"><header class="topbar"><button class="menu-button" id="menuButton" aria-label="Open menu">☰</button><div class="crumb"><span>YOUR LEARNING SPACE</span><b id="pageTitle">Home</b></div><div class="top-stats"><button class="sound-toggle" id="soundToggle" type="button" onclick="toggleSound()" aria-pressed="true">♫ Sound on</button><span class="streak-pill">✦ <b id="topXp">0 XP</b></span><span class="level-pill" id="topLevel">Grammar Beginner</span><div class="avatar">G</div></div></header><div id="app" class="content" tabindex="-1"></div></main>
+</div><div id="toast" class="toast" role="status" aria-live="polite"></div><script src="content.js"></script><script src="app.js"></script>
+</body></html>
